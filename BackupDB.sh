@@ -7,7 +7,7 @@ SERVER="localhost"
 FILE="/.Files/Database/"
  
 # remote server directory to upload backup
-BACKUPDIR="AI/Database/"
+BACKUPDIR="Files/Zen/Database/"
  
 # login to remote server
 ftp -n -i $SERVER <<EOF
