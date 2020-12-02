@@ -4,7 +4,7 @@ PASSWORD="root"
 SERVER="localhost"
  
 # local directory to pickup Sql file
-FILE="/.Files/Database/"
+FILE="/.Files/Database"
  
 # remote server directory to upload backup
 BACKUPDIR="/Files/Zen/Database"
@@ -13,6 +13,6 @@ BACKUPDIR="/Files/Zen/Database"
 ftp -n -i $SERVER <<EOF
 user $USERNAME $PASSWORD
 cd $BACKUPDIR
-mput $FILE/*.sql
+mput $FILE/*.zip
 quit
 EOF
